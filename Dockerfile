@@ -1,11 +1,11 @@
 FROM node:9-slim
 
-WORKDIR /server
+WORKDIR /app
 
-COPY package.json ./server
+COPY package.json /app
 
 RUN npm install
 
-COPY . .server
+COPY . /app
 
-CMD ["node","start.js"]
+CMD ["node","start"]
