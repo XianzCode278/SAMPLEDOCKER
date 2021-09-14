@@ -10,4 +10,4 @@ RUN npm i
 
 COPY . /app
 
-CMD ["node","start"]
+CMD ["npm","start"]
